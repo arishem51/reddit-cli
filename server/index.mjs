@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(201, "POST Success");
     res.end("Ok");
   } else {
-    res.writable(200, "GET Success");
+    res.writeHead(200, "GET Success");
     res.end("Hi");
   }
 });
